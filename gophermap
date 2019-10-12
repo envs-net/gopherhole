@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+import filecmp
+import os
+
+def users():
+	return sorted(os.listdir("/home"), key=lambda x: x.lower())
+
+HEADER = """!Welcome to envs.net
+=figlet -f smslant envs.net
+i	null.host	1
+iis a minimalist, non-commercial	null.host	1
+ishared unix system and will always be free to use.	null.host	1
+i	null.host	1
+iwe are linux lovers, sysadmins, programmer and users who like build	null.host	1
+iwebpages, write blogs, chat online, play cool console games and so much	null.host	1
+imore. you wish to join with an small user space?	null.host	1
+i	null.host	1
+ijoin the team today!	null.host	1
+hsignup for a envs.net account	URL:https://envs.net/signup/	envs.net	70
+i	null.host	1
+ihere's a list of our esteemed users:	null.host	1
+iif you aren't appearing on this list, change your base gophermap	null.host	1
+"""
+
+LINK = "1~{0}	/~{0}/	envs.net	70"
+
+print(HEADER)
+for user in users():
+	if os.path.exists("/home/{}/public_gopher/gophermap".format(user)):
+		if not filecmp.cmp("/etc/skel/public_gopher/gophermap", "/home/{}/public_gopher/gophermap".format(user), shallow=False):
+			print(LINK.format(user))
