@@ -9,7 +9,7 @@ HEADER = """!Welcome to envs.net
 =figlet -f smslant envs.net
 i	null.host	1
 iis a minimalist, non-commercial	null.host	1
-ishared unix system and will always be free to use.	null.host	1
+ishared linux system and will always be free to use.	null.host	1
 i	null.host	1
 iwe are linux lovers, sysadmins, programmer and users who like build	null.host	1
 iwebpages, write blogs, chat online, play cool console games and so much	null.host	1
