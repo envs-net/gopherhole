@@ -18,8 +18,10 @@ i	null.host	1
 ijoin the team today!	null.host	1
 hsignup for a envs.net account	URL:https://envs.net/signup/	envs.net	70
 i	null.host	1
+ienvs help page	null.host	1
+hhelp.envs.net	URL:https://help.envs.net/	envs.net	70
+i	null.host	1
 ihere's a list of our esteemed users:	null.host	1
-iif you aren't appearing on this list, change your base gophermap	null.host	1
 """
 
 LINK = "1~{0}	/~{0}/	envs.net	70"
