@@ -5,7 +5,7 @@ import os
 def users():
 	return sorted(os.listdir("/home"), key=lambda x: x.lower())
 
-HEADER = """!Welcome to envs.net
+HEADER = """!welcome to envs.net
 =figlet -f smslant envs.net
 i	null.host	1
 iis a minimalist, non-commercial	null.host	1
@@ -16,10 +16,12 @@ iwebpages, write blogs, chat online, play cool console games and so much	null.ho
 imore. you wish to join with an small user space?	null.host	1
 i	null.host	1
 ijoin the team today!	null.host	1
-hsignup for a envs.net account	URL:https://envs.net/signup/	envs.net	70
+hsignup for a envs.net account	URL:https://envs.net/signup/	envs.net
 i	null.host	1
 ienvs help page	null.host	1
-hhelp.envs.net	URL:https://help.envs.net/	envs.net	70
+hhelp.envs.net	URL:https://help.envs.net/	envs.net
+i	null.host	1
+1envs on pleroma	/users/envs	pleroma.envs.net	7070
 i	null.host	1
 ihere's a list of our esteemed users:	null.host	1
 """
